@@ -1,0 +1,175 @@
+// Logo begin
+.index-logo {
+	width: 368px;
+	height: 204px;
+	margin: 0 auto 20px;
+
+	img {
+		width: 368px;
+		height: 204px;
+	}
+}
+// Logo end
+
+// Features begin
+.features {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 75px;
+}
+
+.features__item {
+	width: 300px;
+	text-align: center;
+	color: $light;
+
+	p {
+		margin: 10px;
+		margin-bottom: 0;
+	}
+}
+
+.features__name {
+	display: block;
+	margin-bottom: 30px;
+	padding-bottom: 33px;
+	position: relative;
+	max-width: 300px;
+
+	&::after {
+		content: '';
+		display: block;
+		position: absolute;
+		width: 20px;
+		height: 20px;
+		bottom: 0;
+		left: 50%;
+		margin-left: -10px;
+		background-color: $light;
+		transform: rotate(45deg);
+	}
+}
+// Features end
+
+// News and Gallery begin
+.index-content {
+	display: flex;
+	justify-content: space-between;
+	padding: 45px 80px;
+	margin-bottom: 35px;
+	background: url(../img/index-content-line.png) center no-repeat, 
+							$content-bg url(../img/pattern-white.jpg) 0 0 repeat;
+	color: $dark;
+
+	p {
+		margin: 0;
+		margin-bottom: 25px;
+	}
+}
+
+.index-content__left {
+	width: 380px;
+}
+
+.index-content__right {
+	width: 300px;
+}
+
+.index-content__title {
+	margin-bottom: 25px; // у меня было 20
+}
+
+.news-peview {
+	margin: 0;
+	padding: 0;
+	padding-right: 35px;
+	list-style: none;
+
+	li {
+		margin-bottom: 25px; //у меня было 30
+	}
+
+	p {
+		margin-bottom: 0;
+	}
+
+	time {
+		text-transform: none;
+	}
+}
+
+.gallery {
+	position: relative;
+	height: 260px;
+
+	.btn {
+		position: absolute;
+		bottom: 0;
+		width: 140px;
+		margin: 0;
+	}
+}
+
+.gallery__prev {
+	left: 0;
+}
+
+.gallery__next {
+	right: 0;
+}
+
+.gallery__content {
+	margin: 0;
+	height: 178px;
+	background-color: lighten($dark, 70%);
+	border: 7px solid $light;
+
+	img {
+		width: 286px;
+		height: 164px;
+	}
+}
+// News and Gallery end
+
+// Contacts and Form begin
+.appointment-form {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	input {
+		display: block;
+		border: 2px solid $dark;
+		font: inherit;
+		color: inherit;
+		text-transform: inherit;
+		padding: 7px 15px;
+		width: 140px;
+		margin-bottom: 20px;
+		background-color: $content-bg;
+
+		&::-webkit-input-placeholder {
+			color: $dark;
+		}
+		&::-moz-placeholder {
+			color: $dark;
+		}
+		&:-moz-placeholder {
+			color: $dark;
+		}
+		&:-ms-input-placeholder {
+			color: $dark!important;
+		}
+
+		&:focus {
+			border-color: $hover-btn;
+			outline-color: $hover-btn;
+		}
+	}
+
+	.btn {
+		margin: 0;
+		width: 100%;
+	}
+}
+// Contacts and Form end

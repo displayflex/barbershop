@@ -1,0 +1,123 @@
+.main-header {
+	background-color: $dark;
+	color: $light;
+	margin-bottom: 60px;
+
+	.main-header-layout {
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+.inner-page {
+	.main-header {
+		margin-bottom: 50px;
+	}
+}
+
+.main-navigation {
+	width: 780px;
+	display: flex;
+	justify-content: flex-start;
+
+	ul {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+		font-size: 0;
+	}
+
+	li {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	a {
+		display: block;
+		padding: 26px 20px;
+		transition: background-color 0.2s ease;
+
+		&:hover, 
+		&:active {
+			background-color: $hover-menu;
+		}
+	}
+
+	.active {
+		position: relative;
+
+		&::after{
+			content: '';
+			position: absolute;
+			height: 4px;
+			background-color: $light;
+			bottom: 0;
+			left: 20px;
+			right: 20px;
+		}
+		
+		a {
+			&:hover, 
+			&:active {
+				background: none;
+				cursor: default;
+			}
+		}
+	}
+}
+
+.main-navigation .logo-inner {
+	width: 151px;
+	height: 72px;
+	display: block;
+
+	&:hover, 
+	&:active {
+		background: none;
+	}
+
+	img {
+		width: 111px;
+		height: 24px;
+	}
+}
+
+.user-block {
+	max-width: 140px;
+}
+
+.login {
+	display: inline-block;
+	position: relative;
+	vertical-align: middle;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 26px 20px 26px 50px;
+	text-decoration: none;
+	color: $light;
+	transition: background-color 0.2s ease;
+
+	&::before {
+		content: '';
+		display: inline-block;
+		position: absolute;
+		top: 28px;
+		left: 20px;
+		width: 18px; 
+		height: 16px;
+		background: url(../img/sprite.png) -10px -117px;
+		opacity: 0.3;
+		transition: opacity 0.5s ease;
+	}
+
+	&:hover, 
+	&:active {
+		background-color: $hover-menu;
+
+		&::before {
+			opacity: 1;
+		}
+	}
+}

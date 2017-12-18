@@ -1,0 +1,109 @@
+.inner-page-title {
+	margin-bottom: 46px;
+
+	h1 {
+		margin: 0;
+		margin-bottom: 15px;
+		padding: 0;
+		font-size: 30px;
+		line-height: 42px;
+	}
+}
+
+.breadcrumbs {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	font-size: 0;
+
+	li {
+		display: inline;
+		font-size: 14px;
+		line-height: 24px;
+		padding-right: 40px;
+		position: relative;
+
+		&::after {
+			content: '';
+			display: block;
+			position: absolute;
+			width: 8px;
+			height: 8px;
+			top: 5px;
+			right: 15px;
+			background-color: $dark;
+			transform: rotate(45deg);
+		}
+
+		&:last-child::after {
+			display: none;
+		}
+	}
+
+	a {
+		color: $dark;
+		text-decoration: none;
+		border-bottom: 1px solid transparent;
+		transition: all 0.3s ease-in-out;
+
+		&:hover {
+			border-bottom: 1px solid $dark;
+		}
+	}
+}
+
+.current {
+	color: $disabled;
+	cursor: default;
+}
+
+.inner-content {
+	margin-bottom: 75px;
+
+	h2 {
+		margin-top: 60px;
+		margin-bottom: 30px;
+		font-size: 24px;
+		line-height: 30px;
+	}
+
+	p {
+		margin: 14px 0;
+	}
+
+	table {
+		border-collapse: collapse;
+	}
+
+	td {
+		padding: 10px 15px;
+		border: 2px solid $dark;
+	}
+}
+
+.big-heading {
+	margin-top: 55px;
+	margin-bottom: 65px;
+	text-align: center;
+
+	h2 {
+		margin: 0;
+		padding: 0 25px;
+		display: inline-block;
+		position: relative;
+		text-align: center;
+		font-size: 48px;
+		line-height: 48px;
+		z-index: 2;
+		background: $content-bg url(../img/pattern-white.jpg) repeat;
+	}
+
+	&::before {
+		content: '';
+		position: relative;
+		display: block;
+		top: 25px;
+		border-bottom: 2px solid $dark;
+		z-index: 1;
+	} // пересмотреть решение на флексах
+}
