@@ -65,6 +65,7 @@
 		margin-bottom: 30px;
 		font-size: 24px;
 		line-height: 30px;
+		width: 100%;
 	}
 
 	p {
@@ -79,31 +80,86 @@
 		padding: 10px 15px;
 		border: 2px solid $dark;
 	}
-}
 
-.big-heading {
-	margin-top: 55px;
-	margin-bottom: 65px;
-	text-align: center;
-
-	h2 {
-		margin: 0;
-		padding: 0 25px;
-		display: inline-block;
-		position: relative;
-		text-align: center;
+	.big-heading {
+		display: flex;
+		align-items: center;
+		margin-top: 55px;
+		margin-bottom: 65px;
 		font-size: 48px;
 		line-height: 48px;
-		z-index: 2;
-		background: $content-bg url(../img/pattern-white.jpg) repeat;
-	}
+		text-align: center;
 
-	&::before {
-		content: '';
+		&::before,
+		&::after {
+			content: '';
+			width: 50px;
+			height: 2px;
+			background: $dark;
+			flex-grow: 1;
+		}
+
+		&::before {
+			margin-right: 25px;
+		}
+
+		&::after {
+			margin-left: 25px;
+		}
+	}
+}
+
+.custom-list-1 {
+	margin: 14px 0;
+	padding: 0;
+	list-style: none;
+
+	li {
 		position: relative;
-		display: block;
-		top: 25px;
-		border-bottom: 2px solid $dark;
-		z-index: 1;
-	} // пересмотреть решение на флексах
+		margin-bottom: 15px;
+		padding-left: 20px;
+
+		&::before {
+			content: '';
+			position: absolute;
+			top: 8px;
+			left: 0;
+			width: 8px;
+			height: 8px;
+			background-color: $dark;
+			transform: rotate(45deg);
+		}
+	}
+}
+
+.prices-table {
+	width: 100%;
+
+	td {
+		width: 50%;
+
+		&:last-child {
+			text-align: center;
+		}
+	}
+}
+
+.inner-columns {
+	margin: 60px 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	*:first-child {
+		margin-top: 0;
+	}
+}
+
+.inner-column-left,
+.inner-column-right {
+	width: 460px;
+}
+
+.short-text {
+	padding-right: 80px;
 }
