@@ -6,7 +6,7 @@ var gulp 					= require('gulp'),
 		cssnano 			= require('gulp-cssnano'),
 		rename 				= require('gulp-rename')
 		del 					= require('del'),
-//	imagemin 			= require('gulp-imagemin'),
+		//imagemin 			= require('gulp-imagemin'),
 		cache 				= require('gulp-cache'),
 		autoprefixer	= require('gulp-autoprefixer'),
 		notify 				= require("gulp-notify"),
@@ -66,7 +66,7 @@ gulp.task('clear', function() {
 gulp.task('tinypng', function () {
 	return gulp.src('app/img/**/*.{png,jpg,jpeg}')
 	.pipe(tinypng({
-		key: '0dYeOz9XSD1Gq2yu2O4Wwzik0eQUSdrj',
+		key: '0dYeOz9XSD1Gq2yu2O4Wwzik1eQUSdrj',
 		sigFile: 'images/.tinypng-sigs',
 		log: true
 	}))
