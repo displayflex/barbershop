@@ -1,0 +1,14 @@
+.modal-content-map {
+	display: none;
+	position: fixed;
+	z-index: 20;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	width: 766px;
+	height: 560px;
+	box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+	background: $content-bg url(../img/map.jpg) center no-repeat;
+	color: $dark;
+	border: 7px solid $light;
+}

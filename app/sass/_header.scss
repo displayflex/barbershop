@@ -39,7 +39,7 @@
 		padding: 26px 20px;
 		transition: background-color 0.2s ease;
 
-		&:hover, 
+		&:hover,
 		&:active {
 			background-color: $hover-menu;
 		}
@@ -57,9 +57,9 @@
 			left: 20px;
 			right: 20px;
 		}
-		
+
 		a {
-			&:hover, 
+			&:hover,
 			&:active {
 				background: none;
 				cursor: default;
@@ -73,7 +73,7 @@
 	height: 72px;
 	display: block;
 
-	&:hover, 
+	&:hover,
 	&:active {
 		background: none;
 	}
@@ -105,14 +105,14 @@
 		position: absolute;
 		top: 28px;
 		left: 20px;
-		width: 18px; 
+		width: 18px;
 		height: 16px;
 		background: url(../img/sprite.png) -10px -117px;
 		opacity: 0.3;
 		transition: opacity 0.5s ease;
 	}
 
-	&:hover, 
+	&:hover,
 	&:active {
 		background-color: $hover-menu;
 
