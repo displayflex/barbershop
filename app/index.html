@@ -140,5 +140,26 @@
 </footer>
 <!-- /Footer -->
 
+<!-- Modal Login -->
+<div class="modal-content">
+	<button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
+
+	<h2 class="modal-content__title">Личный кабинет</h2>
+	<p>Введите пожалуйста свой логин и пароль</p>
+
+	<form class="login-form" method="POST" action="#">
+		<input class="icon-user" type="text" name="login" placeholder="Логин">
+		<input class="icon-password" type="password" name="password" placeholder="Пароль">
+		<label class="login-checkbox">
+			<input type="checkbox" name="remember" checked>
+			<span class="checkbox-indicator"></span>
+			Запомните меня
+		</label>
+		<a class="restore" href="#">Я забыл пароль!</a>
+		<button class="btn" type="submit">Войти</button>
+	</form>
+</div><!-- /modal-content -->
+<!-- /Modal Login -->
+
 </body>
 </html>
