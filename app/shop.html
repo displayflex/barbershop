@@ -103,9 +103,11 @@
 						<img src="img/shop-item-1.jpg" width="220" height="165" alt="Набор для путешествий Baxter of California»">
 					</div>
 					<div class="shop-item__description">
-						<h3>Набор для путешествий «Baxter of California»</h3>
-						<p>2 900 руб.</p>
-						<a class="btn" href="#">Купить</a>
+						<h3>Набор для путешествий <span>«Baxter of California»</span></h3>
+						<div class="shop-item__wrapper">
+							<p>2 900 руб.</p>
+							<a class="btn" href="#">Купить</a>
+						</div>
 					</div>
 				</div>
 
@@ -114,9 +116,11 @@
 						<img src="img/shop-item-2.jpg" width="220" height="165" alt="Увлажняющий кондиционер «Baxter of California»">
 					</div>
 					<div class="shop-item__description">
-						<h3>Увлажняющий кондиционер «Baxter of California»</h3>
-						<p>750 руб.</p>
-						<a class="btn" href="#">Купить</a>
+						<h3>Увлажняющий кондиционер <span>«Baxter of California»</span></h3>
+						<div class="shop-item__wrapper">
+							<p>750 руб.</p>
+							<a class="btn" href="#">Купить</a>
+						</div>
 					</div>
 				</div>
 
@@ -125,9 +129,11 @@
 						<img src="img/shop-item-3.jpg" width="220" height="165" alt="Гель для волос «SUAVECITO»">
 					</div>
 					<div class="shop-item__description">
-						<h3>Гель для волос «SUAVECITO»</h3>
-						<p>290 руб.</p>
-						<a class="btn" href="#">Купить</a>
+						<h3>Гель для волос <span>«Suavecito»</span></h3>
+						<div class="shop-item__wrapper">
+							<p>290 руб.</p>
+							<a class="btn" href="#">Купить</a>
+						</div>
 					</div>
 				</div>
 
@@ -136,9 +142,11 @@
 						<img src="img/shop-item-4.jpg" width="220" height="165" alt="Глина для укладки волос «American crew»">
 					</div>
 					<div class="shop-item__description">
-						<h3>Глина для укладки волос «American crew»</h3>
-						<p>500 руб.</p>
-						<a class="btn" href="#">Купить</a>
+						<h3>Глина для укладки волос <span>«American crew»</span></h3>
+						<div class="shop-item__wrapper">
+							<p>500 руб.</p>
+							<a class="btn" href="#">Купить</a>
+						</div>
 					</div>
 				</div>
 
@@ -147,9 +155,11 @@
 						<img src="img/shop-item-5.jpg" width="220" height="165" alt="Гель для волос «AMERICAN CREW»">
 					</div>
 					<div class="shop-item__description">
-						<h3>Гель для волос «AMERICAN CREW»</h3>
-						<p>300 руб.</p>
-						<a class="btn" href="#">Купить</a>
+						<h3>Гель для волос <span>«American crew»</span></h3>
+						<div class="shop-item__wrapper">
+							<p>300 руб.</p>
+							<a class="btn" href="#">Купить</a>
+						</div>
 					</div>
 				</div>
 
@@ -158,17 +168,19 @@
 						<img src="img/shop-item-6.jpg" width="220" height="165" alt="Набор для бритья «Baxter of California»">
 					</div>
 					<div class="shop-item__description">
-						<h3>Набор для бритья «Baxter of California»</h3>
-						<p>3 900 руб.</p>
-						<a class="btn" href="#">Купить</a>
+						<h3>Набор для бритья <span>«Baxter of California»</span></h3>
+						<div class="shop-item__wrapper">
+							<p>3 900 руб.</p>
+							<a class="btn" href="#">Купить</a>
+						</div>
 					</div>
 				</div>
 
 				<div class="shop-navigation">
-					<a class="btn shop__navigation__link">1</a>
-					<a class="btn shop__navigation__link--active">2</a>
-					<a class="btn shop__navigation__link">3</a>
-					<a class="btn shop__navigation__link">4</a>
+					<a class="btn shop-navigation__link" href="#">1</a>
+					<a class="btn shop-navigation__link shop-navigation__link--active">2</a>
+					<a class="btn shop-navigation__link" href="#">3</a>
+					<a class="btn shop-navigation__link" href="#">4</a>
 				</div>
 
 
@@ -208,6 +220,40 @@
 	</div>
 </footer>
 <!-- /Footer -->
+
+<!-- Modal Login -->
+<div class="modal-content">
+	<button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
+
+	<h2 class="modal-content__title">Личный кабинет</h2>
+	<p>Введите пожалуйста свой логин и пароль</p>
+
+	<form class="login-form" method="POST" action="#">
+		<input class="icon-user" type="text" name="login" placeholder="Логин">
+		<input class="icon-password" type="password" name="password" placeholder="Пароль">
+		<label class="login-checkbox">
+			<input type="checkbox" name="remember" checked>
+			<span class="checkbox-indicator"></span>
+			Запомните меня
+		</label>
+		<a class="restore" href="#">Я забыл пароль!</a>
+		<button class="btn" type="submit">Войти</button>
+	</form>
+</div><!-- /modal-content -->
+<!-- /Modal Login -->
+
+<!-- Modal Map -->
+<div class="modal-content-map">
+	<button class="modal-content__close" type="button" title="Закрыть">Закрыть</button>
+	<div id="yandex-map">
+		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad3fbaf543af923cf794598c6ef7341942cfdb6ba0f55a3344b1b2401aa809757&amp;source=constructor" width="752" height="546" frameborder="0"></iframe>
+	</div>
+</div>
+<!-- /Modal Map -->
+
+<!-- Modal Overlay -->
+<div class="modal-overlay"></div>
+<!-- /Modal Overlay -->
 
 </body>
 </html>

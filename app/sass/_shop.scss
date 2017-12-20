@@ -15,14 +15,13 @@
 
 .shop-column-left {
 	width: 220px;
-	outline: 1px solid red;
 }
 
 .shop-column-right {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: flex-start;
 	width: 700px;
-	outline: 1px solid red;
 }
 
 .shop-form {
@@ -121,4 +120,68 @@
 
 .shop-item__picture {
 	background-color: $content-bg;
+}
+
+.shop-item__description {
+	padding: 6px 16px 16px 16px;
+
+	h3 {
+		margin-bottom: 13px;
+		font-size: 14px;
+		line-height: 18px;
+		text-transform: none;
+
+		span {
+			display: block;
+			text-transform: uppercase;
+		}
+	}
+}
+
+.shop-item__wrapper {
+	background-color: $shop-wrapper;
+	height: 43px;
+	vertical-align: middle;
+
+	display: flex;
+	text-align: center;
+
+	p {
+		margin: 0;
+		width: 189px;
+		padding: 12px 0;
+		display: inline-block;
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.btn {
+		margin: 0;
+		padding-left: 19px;
+		padding-right: 19px;
+		height: 43px;
+	}
+}
+
+.shop-navigation {
+	margin-top: 24px;
+}
+
+.shop-navigation__link {
+	margin: 0;
+	margin-right: 2px;
+	padding: 10px 19px;
+
+	&--active {
+		background-color: $light;
+		color: $dark;
+		transition: none;
+
+		&:hover,
+		&:focus {
+			background-color: $light;
+			color: $dark;
+			cursor: default;
+		}
+	}
 }
