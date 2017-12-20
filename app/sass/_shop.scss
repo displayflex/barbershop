@@ -1,0 +1,124 @@
+.shop-columns {
+	margin: 50px 0;
+	display: flex;
+	justify-content: space-between;
+
+	h2 {
+		margin-top: 50px;
+		margin-bottom: 30px;
+	}
+
+	*:first-child {
+		margin-top: 0;
+	}
+}
+
+.shop-column-left {
+	width: 220px;
+	outline: 1px solid red;
+}
+
+.shop-column-right {
+	display: flex;
+	flex-wrap: wrap;
+	width: 700px;
+	outline: 1px solid red;
+}
+
+.shop-form {
+	label {
+		display: block;
+		margin-bottom: 19px;
+		text-transform: inherit;
+		font: inherit;
+		color: inherit;
+		line-height: 18px;
+	}
+
+	.btn {
+		margin-top: 33px;
+	}
+}
+
+.shop-checkbox,
+.shop-radio {
+	position: relative;
+	padding-left: 44px;
+	cursor: pointer;
+	transition: color 0.2s;
+
+	&:hover {
+		color: $hover-btn;
+	}
+
+	input[type="checkbox"],
+	input[type="radio"] {
+		display: none;
+	}
+
+	input[type="checkbox"] + .checkbox-indicator {
+		position: absolute;
+		top: -1px;
+		left: 0;
+		width: 20px;
+		height: 20px;
+		border: 2px solid $dark;
+	}
+
+	input[type="checkbox"]:checked + .checkbox-indicator::before,
+	input[type="checkbox"]:checked + .checkbox-indicator::after {
+		content: '';
+		position: absolute;
+		top: 7px;
+		left: 0;
+		width: 16px;
+		height: 2px;
+		background-color: $dark;
+	}
+
+	input[type="checkbox"]:checked + .checkbox-indicator::before {
+		transform: rotate(45deg);
+	}
+
+	input[type="checkbox"]:checked + .checkbox-indicator::after {
+		transform: rotate(-45deg);
+	}
+
+	input[type="radio"] + .radio-indicator {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 20px;
+		height: 20px;
+		border: 2px solid $dark;
+		border-radius: 50%;
+	}
+
+	input[type="radio"]:checked + .radio-indicator::before,
+	input[type="radio"]:checked + .radio-indicator::after {
+		content: '';
+		position: absolute;
+		top: 4px;
+		left: 4px;
+		width: 8px;
+		height: 8px;
+		background-color: $dark;
+		border-radius: 50%;
+	}
+}
+
+.shop-item {
+	width: 220px;
+	background-color: $light;
+	box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+	margin-bottom: 20px;
+	margin-right: 20px;
+
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
+}
+
+.shop-item__picture {
+	background-color: $content-bg;
+}
