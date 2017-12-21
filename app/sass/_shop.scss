@@ -112,9 +112,22 @@
 	box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
 	margin-bottom: 20px;
 	margin-right: 20px;
+	transition: box-shadow 0.3s ease-in-out;
 
 	&:nth-child(3n) {
 		margin-right: 0;
+	}
+
+	&:hover, &:focus {
+		box-shadow: 3.2px 3.8px 25px rgba(0, 1, 1, 0.3);
+	}
+}
+
+.shop-item__card-link {
+	display: block;
+
+	&:hover, &:focus {
+		cursor: pointer;
 	}
 }
 
@@ -141,14 +154,14 @@
 .shop-item__wrapper {
 	background-color: $shop-wrapper;
 	height: 43px;
-	vertical-align: middle;
-
-	display: flex;
+	font-size: 0;
+	width: 187px;
 	text-align: center;
 
-	p {
+	.shop-item__price {
 		margin: 0;
-		width: 189px;
+		margin-bottom: 0;
+		width: 109px;
 		padding: 12px 0;
 		display: inline-block;
 		font-size: 14px;
@@ -156,10 +169,12 @@
 	}
 
 	.btn {
+		width: 78px;
 		margin: 0;
-		padding-left: 19px;
-		padding-right: 19px;
+		padding-left: 18px;
+		padding-right: 18px;
 		height: 43px;
+		font-size: 14px;
 	}
 }
 
