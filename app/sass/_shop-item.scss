@@ -1,8 +1,5 @@
 .shop-item-column-left {
 	width: 460px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
 }
 
 .shop-item-column-right {
@@ -37,10 +34,21 @@
 	margin-bottom: 20px;
 }
 
+.item-pictures-small-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+}
+
 .item-picture-small {
 	width: 140px;
 	height: 149px;
 	box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+	margin-right: 20px;
+	margin-bottom: 20px;
+
+	&:nth-child(3n) {
+		margin-right: 0;
+	}
 }
 
 .good-list {
