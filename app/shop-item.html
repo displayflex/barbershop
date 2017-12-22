@@ -116,8 +116,8 @@
 	<p>Введите пожалуйста свой логин и пароль</p>
 
 	<form class="login-form" method="POST" action="#">
-		<input class="icon-user" type="text" name="login" placeholder="Логин">
-		<input class="icon-password" type="password" name="password" placeholder="Пароль">
+		<input class="icon-user" type="text" name="login" placeholder="Логин" required>
+		<input class="icon-password" type="password" name="password" placeholder="Пароль" required>
 		<label class="login-checkbox">
 			<input type="checkbox" name="remember" checked>
 			<span class="checkbox-indicator"></span>
@@ -141,6 +141,8 @@
 <!-- Modal Overlay -->
 <div class="modal-overlay"></div>
 <!-- /Modal Overlay -->
+
+<script src="js/script.js"></script>
 
 </body>
 </html>
