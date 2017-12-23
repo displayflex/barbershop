@@ -21,16 +21,26 @@ loginLink.addEventListener('click', function(event) {
 close.addEventListener('click', function(event) {
 	event.preventDefault();
 	popup.classList.remove("modal-content-show");
+	popup.classList.remove("modal-error");
 });
 
 form.addEventListener('submit', function(event) {
 	if (!login.value || !password.value) {
 		event.preventDefault();
-		console.log('Нужно ввести логин и пароль');
+		popup.classList.add("modal-error");
+		popup.classList.remove("modal-error");
+		void popup.offsetWidth; //для того что бы удаление класса не происходило до анимации
+		popup.classList.add("modal-error");
 	} else {
 		localStorage.setItem(login, login.value);
-		//localStorage.setItem(password, login.password);
 	}
 });
 
-// 8: 1:44
+window.addEventListener('keydown', function() {
+	if (event.keyCode === 27) {
+		if (popup.classList.contains("modal-content-show")) {
+			popup.classList.remove("modal-content-show");
+			popup.classList.remove("modal-error");
+		}
+	}
+});
