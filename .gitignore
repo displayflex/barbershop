@@ -5,6 +5,7 @@
 *.pdf
 *.psd
 *.sublime*
+build/
 app/css/*.css
 node_modules/
 npm-debug.*

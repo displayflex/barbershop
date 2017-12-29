@@ -1,7 +1,7 @@
 .main-header {
-	background-color: $dark;
-	color: $light;
 	margin-bottom: 60px;
+	color: $light;
+	background-color: $dark;
 
 	.main-header-layout {
 		display: flex;
@@ -16,22 +16,22 @@
 }
 
 .main-navigation {
-	width: 780px;
 	display: flex;
 	justify-content: flex-start;
+	width: 780px;
 
 	ul {
-		padding: 0;
 		margin: 0;
+		padding: 0;
 		list-style: none;
 		font-size: 0;
 	}
 
 	li {
 		display: inline-block;
-		vertical-align: middle;
 		font-size: 16px;
 		line-height: 20px;
+		vertical-align: middle;
 	}
 
 	a {
@@ -48,14 +48,14 @@
 	.active {
 		position: relative;
 
-		&::after{
-			content: '';
+		&::after {
+			content: "";
 			position: absolute;
-			height: 4px;
-			background-color: $light;
+			right: 20px;
 			bottom: 0;
 			left: 20px;
-			right: 20px;
+			height: 4px;
+			background-color: $light;
 		}
 
 		a {
@@ -69,9 +69,9 @@
 }
 
 .main-navigation .logo-inner {
+	display: block;
 	width: 151px;
 	height: 72px;
-	display: block;
 
 	&:hover,
 	&:active {
@@ -89,25 +89,25 @@
 }
 
 .login {
-	display: inline-block;
 	position: relative;
-	vertical-align: middle;
+	display: inline-block;
+	padding: 26px 20px 26px 50px;
 	font-size: 16px;
 	line-height: 20px;
-	padding: 26px 20px 26px 50px;
-	text-decoration: none;
+	vertical-align: middle;
 	color: $light;
+	text-decoration: none;
 	transition: background-color 0.2s ease;
 
 	&::before {
-		content: '';
-		display: inline-block;
+		content: "";
 		position: absolute;
 		top: 28px;
 		left: 20px;
+		display: inline-block;
 		width: 18px;
 		height: 16px;
-		background: url(../img/sprite.png) -10px -117px;
+		background: url("../img/sprite.png") -10px -117px;
 		opacity: 0.3;
 		transition: opacity 0.5s ease;
 	}

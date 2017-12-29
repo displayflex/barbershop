@@ -1,6 +1,6 @@
 {
   "name": "barbershop",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "barbershop",
   "main": "index.js",
   "scripts": {
@@ -21,6 +21,9 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^3.1.0",
     "gulp-tinypng-compress": "^1.2.1",
-    "gulp-uglifyjs": "^0.6.2"
+    "gulp-uglifyjs": "^0.6.2",
+    "stylelint": "^8.4.0",
+    "stylelint-config-recommended-scss": "^3.0.0",
+    "stylelint-scss": "^2.2.0"
   }
 }

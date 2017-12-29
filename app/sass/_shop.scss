@@ -1,7 +1,7 @@
 .shop-columns {
-	margin: 50px 0;
 	display: flex;
 	justify-content: space-between;
+	margin: 50px 0;
 
 	h2 {
 		margin-top: 50px;
@@ -28,10 +28,10 @@
 	label {
 		display: block;
 		margin-bottom: 19px;
-		text-transform: inherit;
 		font: inherit;
-		color: inherit;
 		line-height: 18px;
+		color: inherit;
+		text-transform: inherit;
 	}
 
 	.btn {
@@ -66,7 +66,7 @@
 
 	input[type="checkbox"]:checked + .checkbox-indicator::before,
 	input[type="checkbox"]:checked + .checkbox-indicator::after {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 7px;
 		left: 0;
@@ -85,8 +85,8 @@
 
 	input[type="radio"] + .radio-indicator {
 		position: absolute;
-		top: 0px;
-		left: 0px;
+		top: 0;
+		left: 0;
 		width: 20px;
 		height: 20px;
 		border: 2px solid $dark;
@@ -95,7 +95,7 @@
 
 	input[type="radio"]:checked + .radio-indicator::before,
 	input[type="radio"]:checked + .radio-indicator::after {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 4px;
 		left: 4px;
@@ -108,17 +108,18 @@
 
 .shop-item {
 	width: 220px;
+	margin-right: 20px;
+	margin-bottom: 20px;
 	background-color: $light;
 	box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
-	margin-bottom: 20px;
-	margin-right: 20px;
 	transition: box-shadow 0.3s ease-in-out;
 
 	&:nth-child(3n) {
 		margin-right: 0;
 	}
 
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		box-shadow: 3.2px 3.8px 25px rgba(0, 1, 1, 0.3);
 	}
 }
@@ -126,7 +127,8 @@
 .shop-item__card-link {
 	display: block;
 
-	&:hover, &:focus {
+	&:hover,
+	&:focus {
 		cursor: pointer;
 	}
 }
@@ -152,28 +154,28 @@
 }
 
 .shop-item__wrapper {
-	background-color: $shop-wrapper;
+	width: 187px;
 	height: 43px;
 	font-size: 0;
-	width: 187px;
 	text-align: center;
+	background-color: $shop-wrapper;
 
 	.shop-item__price {
+		display: inline-block;
+		width: 109px;
 		margin: 0;
 		margin-bottom: 0;
-		width: 109px;
 		padding: 12px 0;
-		display: inline-block;
 		font-size: 14px;
 		line-height: 18px;
 	}
 
 	.btn {
 		width: 78px;
-		margin: 0;
-		padding-left: 18px;
-		padding-right: 18px;
 		height: 43px;
+		margin: 0;
+		padding-right: 18px;
+		padding-left: 18px;
 		font-size: 14px;
 	}
 }
@@ -188,14 +190,14 @@
 	padding: 10px 19px;
 
 	&--active {
-		background-color: $light;
 		color: $dark;
+		background-color: $light;
 		transition: none;
 
 		&:hover,
 		&:focus {
-			background-color: $light;
 			color: $dark;
+			background-color: $light;
 			cursor: default;
 		}
 	}
