@@ -5,23 +5,23 @@ var mapLinkFooter = document.querySelector(".footer-contacts__link");
 
 mapOpen.addEventListener('click', function(event) {
 	event.preventDefault();
-	mapPopup.classList.add("modal-map-show");
+	mapPopup.classList.add("modal-map--show");
 });
 
 mapClose.addEventListener('click', function(event) {
 	event.preventDefault();
-	mapPopup.classList.remove("modal-map-show");
+	mapPopup.classList.remove("modal-map--show");
 });
 
 window.addEventListener('keydown', function() {
 	if (event.keyCode === 27) {
-		if (mapPopup.classList.contains("modal-map-show")) {
-			mapPopup.classList.remove("modal-map-show");
+		if (mapPopup.classList.contains("modal-map--show")) {
+			mapPopup.classList.remove("modal-map--show");
 		}
 	}
 });
 
 mapLinkFooter.addEventListener('click', function(event){
 	event.preventDefault();
-	mapPopup.classList.add("modal-map-show");
+	mapPopup.classList.add("modal-map--show");
 });

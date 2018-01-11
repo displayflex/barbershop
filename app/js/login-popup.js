@@ -1,4 +1,4 @@
-var loginLink = document.querySelector(".login");
+var loginLink = document.querySelector(".user-block__login");
 var popup = document.querySelector(".modal-content");
 var close = document.querySelector(".modal-content__close");
 var login = popup.querySelector("[name=login]");
@@ -8,7 +8,7 @@ var storage = localStorage.getItem("login");
 
 loginLink.addEventListener('click', function(event) {
 	event.preventDefault();
-	popup.classList.add("modal-content-show");
+	popup.classList.add("modal-content--show");
 
 	if (storage) {
 		login.value = storage;
@@ -20,7 +20,7 @@ loginLink.addEventListener('click', function(event) {
 
 close.addEventListener('click', function(event) {
 	event.preventDefault();
-	popup.classList.remove("modal-content-show");
+	popup.classList.remove("modal-content--show");
 	popup.classList.remove("modal-error");
 });
 
@@ -38,8 +38,8 @@ form.addEventListener('submit', function(event) {
 
 window.addEventListener('keydown', function() {
 	if (event.keyCode === 27) {
-		if (popup.classList.contains("modal-content-show")) {
-			popup.classList.remove("modal-content-show");
+		if (popup.classList.contains("modal-content--show")) {
+			popup.classList.remove("modal-content--show");
 			popup.classList.remove("modal-error");
 		}
 	}

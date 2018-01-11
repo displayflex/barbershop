@@ -1,4 +1,5 @@
-.shop-columns {
+.shop-columns,
+.shop-item-columns {
 	display: flex;
 	justify-content: space-between;
 	margin: 50px 0;
@@ -13,11 +14,11 @@
 	}
 }
 
-.shop-column-left {
+.shop-columns__left {
 	width: 220px;
 }
 
-.shop-column-right {
+.shop-columns__right {
 	display: flex;
 	flex-wrap: wrap;
 	align-items: flex-start;
@@ -39,8 +40,8 @@
 	}
 }
 
-.shop-checkbox,
-.shop-radio {
+.shop-form__checkbox,
+.shop-form__radio {
 	position: relative;
 	padding-left: 44px;
 	cursor: pointer;
@@ -55,7 +56,7 @@
 		display: none;
 	}
 
-	input[type="checkbox"] + .checkbox-indicator {
+	input[type="checkbox"] + .shop-form__checkbox-indicator {
 		position: absolute;
 		top: -1px;
 		left: 0;
@@ -64,8 +65,8 @@
 		border: 2px solid $dark;
 	}
 
-	input[type="checkbox"]:checked + .checkbox-indicator::before,
-	input[type="checkbox"]:checked + .checkbox-indicator::after {
+	input[type="checkbox"]:checked + .shop-form__checkbox-indicator::before,
+	input[type="checkbox"]:checked + .shop-form__checkbox-indicator::after {
 		content: "";
 		position: absolute;
 		top: 7px;
@@ -75,15 +76,15 @@
 		background-color: $dark;
 	}
 
-	input[type="checkbox"]:checked + .checkbox-indicator::before {
+	input[type="checkbox"]:checked + .shop-form__checkbox-indicator::before {
 		transform: rotate(45deg);
 	}
 
-	input[type="checkbox"]:checked + .checkbox-indicator::after {
+	input[type="checkbox"]:checked + .shop-form__checkbox-indicator::after {
 		transform: rotate(-45deg);
 	}
 
-	input[type="radio"] + .radio-indicator {
+	input[type="radio"] + .shop-form__radio-indicator {
 		position: absolute;
 		top: 0;
 		left: 0;
@@ -93,8 +94,8 @@
 		border-radius: 50%;
 	}
 
-	input[type="radio"]:checked + .radio-indicator::before,
-	input[type="radio"]:checked + .radio-indicator::after {
+	input[type="radio"]:checked + .shop-form__radio-indicator::before,
+	input[type="radio"]:checked + .shop-form__radio-indicator::after {
 		content: "";
 		position: absolute;
 		top: 4px;
@@ -153,7 +154,7 @@
 	}
 }
 
-.shop-item__wrapper {
+.shop-item__inner-wrapper {
 	width: 187px;
 	height: 43px;
 	font-size: 0;

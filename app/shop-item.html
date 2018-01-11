@@ -10,7 +10,7 @@
 
 <!-- Header -->
 <header class="main-header">
-	<div class="container main-header-layout">
+	<div class="container main-header__layout">
 		<nav class="main-navigation">
 			<a class="logo-inner" href="index.html"><img src="img/header-logo.png" width="111" height="24" alt="Барбершоп «Бородинский»"></a>
 			<ul>
@@ -23,7 +23,7 @@
 		</nav>
 
 		<div class="user-block">
-			<a class="login" href="#">Вход</a>
+			<a class="user-block__login" href="#">Вход</a>
 		</div>
 	</div><!-- /container -->
 </header>
@@ -34,26 +34,26 @@
 	<div class="inner-page-title">
 		<h1>Набор для путешествий «Baxter of California»</h1>
 		<ul class="breadcrumbs">
-			<li><a href="index.html">Главная</a></li>
-			<li><a href="shop.html">Магазин</a></li>
-			<li><a href="shop.html">Средства для ухода</a></li>
-			<li class="current">Набор для путешествий «Baxter of California»</li>
+			<li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
+			<li class="breadcrumbs__item"><a href="shop.html">Магазин</a></li>
+			<li class="breadcrumbs__item"><a href="shop.html">Средства для ухода</a></li>
+			<li class="breadcrumbs__item breadcrumbs__item--current">Набор для путешествий «Baxter of California»</li>
 		</ul>
 	</div>
 
 	<div class="inner-content">
-		<div class="shop-columns">
-			<div class="shop-item-column-left">
-				<div class="item-picture-big"><img src="img/item-1-3-full.jpg" width="460" height="498" alt="Набор для путешествий «Baxter of California»"></div>
+		<div class="shop-item-columns">
+			<div class="shop-item-columns__left item-pictures">
+				<div class="item-pictures__big"><img src="img/item-1-3-full.jpg" width="460" height="498" alt="Набор для путешествий «Baxter of California»"></div>
 
-				<div class="item-pictures-small-wrapper">
-					<div class="item-picture-small"><img src="img/item-1-1-small.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></div>
-					<div class="item-picture-small"><img src="img/item-1-2-small.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></div>
-					<div class="item-picture-small"><img src="img/item-1-3-small.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></div>
+				<div class="item-pictures__small-wrapper">
+					<div class="item-pictures__small"><img src="img/item-1-1-small.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></div>
+					<div class="item-pictures__small"><img src="img/item-1-2-small.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></div>
+					<div class="item-pictures__small"><img src="img/item-1-3-small.jpg" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></div>
 				</div>
-			</div><!-- /shop-item-column-left -->
+			</div><!-- /shop-item-columns__left -->
 
-			<div class="shop-item-column-right">
+			<div class="shop-item-columns__right">
 				<b>Есть в наличии</b>
 				<span>Артикул: dexter-ae</span>
 				<p>Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
@@ -64,14 +64,14 @@
 				</div>
 
 				<h2>В набор входят:</h2>
-				<ul class="good-list">
+				<ul class="shop-item__good-list">
 					<li>Средство для умывания (50 мл)</li>
 					<li>Увлажняющий крем (50 мл)</li>
 					<li>Крем для бритья (50 мл)</li>
 					<li>Крем после бритья, шампунь (50 мл)</li>
 					<li>Удобная кожаная косметичка</li>
 				</ul>
-			</div><!-- /shop-item-column-right -->
+			</div><!-- /shop-item-columns__right -->
 		</div><!-- /shop-columns -->
 	</div><!-- /inner-content -->
 </main>
@@ -79,8 +79,8 @@
 
 <!-- Footer -->
 <footer class="main-footer inner-page-footer">
-	<div class="container main-footer-layout">
-		<section class="footer-contacts">
+	<div class="container main-footer__layout">
+		<section class="main-footer__contacts footer-contacts">
 			<p>
 				Барбершоп «Бородинский»<br>
 				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
@@ -95,12 +95,12 @@
 
 		<section class="footer-social">
 			<p>Давайте дружить!</p>
-			<a class="footer-social__btn footer-social__btn-vk" href="#">Вконтакте</a>
-			<a class="footer-social__btn footer-social__btn-fb" href="#">Фейсбук</a>
-			<a class="footer-social__btn footer-social__btn-inst" href="#">Инстаграм</a>
+			<a class="footer-social__btn footer-social__btn--vk" href="#">Вконтакте</a>
+			<a class="footer-social__btn footer-social__btn--fb" href="#">Фейсбук</a>
+			<a class="footer-social__btn footer-social__btn--inst" href="#">Инстаграм</a>
 		</section>
 
-		<section class="footer-copyright">
+		<section class="main-footer__copyright footer-copyright">
 			<p>Разработано:</p>
 			<a class="btn" href="#">htmlacademy.ru</a>
 		</section>
@@ -115,22 +115,22 @@
 	<h2 class="modal-content__title">Личный кабинет</h2>
 	<p>Введите пожалуйста свой логин и пароль</p>
 
-	<form class="login-form" method="POST" action="#">
-		<input class="icon-user" type="text" name="login" placeholder="Логин">
-		<input class="icon-password" type="password" name="password" placeholder="Пароль">
-		<label class="login-checkbox">
+	<form class="modal-content__form login-form" method="POST" action="#">
+		<input class="login-form__input login-form__input--icon-user" type="text" name="login" placeholder="Логин">
+		<input class="login-form__input login-form__input--icon-password" type="password" name="password" placeholder="Пароль">
+		<label class="login-form__checkbox">
 			<input type="checkbox" name="remember" checked>
-			<span class="checkbox-indicator"></span>
+			<span class="login-form__checkbox-indicator"></span>
 			Запомните меня
 		</label>
-		<a class="restore" href="#">Я забыл пароль!</a>
+		<a class="login-form__restore" href="#">Я забыл пароль!</a>
 		<button class="btn" type="submit">Войти</button>
 	</form>
 </div><!-- /modal-content -->
 <!-- /Modal Login -->
 
 <!-- Modal Map -->
-<div class="modal-content-map">
+<div class="modal-content-map modal-map">
 	<button class="modal-map__close" type="button" title="Закрыть">Закрыть</button>
 	<div id="yandex-map"></div>
 

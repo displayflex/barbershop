@@ -10,7 +10,7 @@
 
 <!-- Header -->
 <header class="main-header">
-	<div class="container main-header-layout">
+	<div class="container main-header__layout">
 		<nav class="main-navigation">
 			<ul>
 				<li><a href="#">Информация</a></li>
@@ -22,7 +22,7 @@
 		</nav>
 
 		<div class="user-block">
-			<a class="login" href="#">Вход</a>
+			<a class="user-block__login" href="#">Вход</a>
 		</div>
 	</div><!-- /container -->
 </header>
@@ -111,8 +111,8 @@
 
 <!-- Footer -->
 <footer class="main-footer">
-	<div class="container main-footer-layout">
-		<section class="footer-contacts">
+	<div class="container main-footer__layout">
+		<section class="main-footer__contacts footer-contacts">
 			<p>
 				Барбершоп «Бородинский»<br>
 				Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
@@ -127,12 +127,12 @@
 
 		<section class="footer-social">
 			<p>Давайте дружить!</p>
-			<a class="footer-social__btn footer-social__btn-vk" href="#">Вконтакте</a>
-			<a class="footer-social__btn footer-social__btn-fb" href="#">Фейсбук</a>
-			<a class="footer-social__btn footer-social__btn-inst" href="#">Инстаграм</a>
+			<a class="footer-social__btn footer-social__btn--vk" href="#">Вконтакте</a>
+			<a class="footer-social__btn footer-social__btn--fb" href="#">Фейсбук</a>
+			<a class="footer-social__btn footer-social__btn--inst" href="#">Инстаграм</a>
 		</section>
 
-		<section class="footer-copyright">
+		<section class="main-footer__copyright footer-copyright">
 			<p>Разработано:</p>
 			<a class="btn" href="#">htmlacademy.ru</a>
 		</section>
@@ -147,22 +147,22 @@
 	<h2 class="modal-content__title">Личный кабинет</h2>
 	<p>Введите пожалуйста свой логин и пароль</p>
 
-	<form class="login-form" method="POST" action="#">
-		<input class="icon-user" type="text" name="login" placeholder="Логин">
-		<input class="icon-password" type="password" name="password" placeholder="Пароль">
-		<label class="login-checkbox">
+	<form class="modal-content__form login-form" method="POST" action="#">
+		<input class="login-form__input login-form__input--icon-user" type="text" name="login" placeholder="Логин">
+		<input class="login-form__input login-form__input--icon-password" type="password" name="password" placeholder="Пароль">
+		<label class="login-form__checkbox">
 			<input type="checkbox" name="remember" checked>
-			<span class="checkbox-indicator"></span>
+			<span class="login-form__checkbox-indicator"></span>
 			Запомните меня
 		</label>
-		<a class="restore" href="#">Я забыл пароль!</a>
+		<a class="login-form__restore" href="#">Я забыл пароль!</a>
 		<button class="btn" type="submit">Войти</button>
 	</form>
 </div><!-- /modal-content -->
 <!-- /Modal Login -->
 
 <!-- Modal Map -->
-<div class="modal-content-map">
+<div class="modal-content-map modal-map">
 	<button class="modal-map__close" type="button" title="Закрыть">Закрыть</button>
 	<div id="yandex-map"></div>
 

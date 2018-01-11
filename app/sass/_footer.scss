@@ -5,7 +5,7 @@
 	color: $light;
 	background: $dark-bg url("../img/pattern-dark.jpg") 0 0 repeat;
 
-	.main-footer-layout {
+	.main-footer__layout {
 		display: flex;
 		justify-content: flex-start;
 	}
@@ -19,9 +19,12 @@
 	box-shadow: inset 0 30px 40px -15px $dark;
 }
 
+.main-footer__contacts {
+	margin-right: 63px;
+}
+
 .footer-contacts {
 	width: 320px;
-	margin-right: 63px;
 
 	a {
 		color: $light;
@@ -64,7 +67,7 @@
 	}
 }
 
-.footer-social__btn-vk {
+.footer-social__btn--vk {
 	background-position: -1px -32px;
 
 	&:hover {
@@ -72,7 +75,7 @@
 	}
 }
 
-.footer-social__btn-fb {
+.footer-social__btn--fb {
 	background-position: 5px -262px;
 
 	&:hover {
@@ -80,7 +83,7 @@
 	}
 }
 
-.footer-social__btn-inst {
+.footer-social__btn--inst {
 	background-position: 2px -180px;
 
 	&:hover {
@@ -88,9 +91,12 @@
 	}
 }
 
+.main-footer__copyright {
+	margin-left: auto;
+}
+
 .footer-copyright {
 	max-width: 180px;
-	margin-left: auto;
 
 	p {
 		margin-bottom: 15px;
