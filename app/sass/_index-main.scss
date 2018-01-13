@@ -138,10 +138,13 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 
+	p.appointment-form__item {
+		margin-bottom: 20px;
+	}
+
 	input {
 		display: block;
 		width: 140px;
-		margin-bottom: 20px;
 		padding: 7px 15px;
 		font: inherit;
 		color: inherit;

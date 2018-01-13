@@ -4,28 +4,34 @@
 	justify-content: space-between;
 	margin: 50px 0;
 
-	h2 {
-		margin-top: 50px;
-		margin-bottom: 30px;
-	}
-
 	*:first-child {
 		margin-top: 0;
 	}
 }
 
-.shop-columns__left {
+.filters {
 	width: 220px;
 }
 
-.shop-columns__right {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: flex-start;
+.catalog {
 	width: 700px;
 }
 
 .shop-form {
+	fieldset {
+		margin: 0;
+		margin-top: 30px;
+		padding: 0;
+		border: none;
+	}
+
+	legend {
+		margin-bottom: 30px;
+		font: inherit;
+		font-size: 24px;
+		line-height: 30px;
+	}
+
 	label {
 		display: block;
 		margin-bottom: 19px;
@@ -38,6 +44,12 @@
 	.btn {
 		margin-top: 33px;
 	}
+}
+
+.filter-list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
 }
 
 .shop-form__checkbox,
@@ -107,44 +119,42 @@
 	}
 }
 
-.shop-item {
-	width: 220px;
+.catalog__list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.catalog__item {
 	margin-right: 20px;
 	margin-bottom: 20px;
-	background-color: $light;
-	box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
-	transition: box-shadow 0.3s ease-in-out;
 
 	&:nth-child(3n) {
 		margin-right: 0;
 	}
+}
+
+.shop-item {
+	width: 220px;
+	background-color: $light;
+	box-shadow: 0 0 15px rgba(0, 1, 1, 0.2);
+	transition: box-shadow 0.3s ease-in-out;
 
 	&:hover,
 	&:focus {
 		box-shadow: 3.2px 3.8px 25px rgba(0, 1, 1, 0.3);
 	}
-}
-
-.shop-item__card-link {
-	display: block;
-
-	&:hover,
-	&:focus {
-		cursor: pointer;
-	}
-}
-
-.shop-item__picture {
-	background-color: $content-bg;
-}
-
-.shop-item__description {
-	padding: 6px 16px 16px 16px;
 
 	h3 {
+		margin: 0;
 		margin-bottom: 13px;
+		padding: 6px 16px 0 16px;
 		font-size: 14px;
 		line-height: 18px;
+		color: $dark;
 		text-transform: none;
 
 		span {
@@ -154,9 +164,19 @@
 	}
 }
 
-.shop-item__inner-wrapper {
+.shop-item__card-link:hover,
+.shop-item__card-link:focus {
+	cursor: pointer;
+}
+
+.shop-item__image {
+	background-color: $content-bg;
+}
+
+.shop-item__price-wrapper {
 	width: 187px;
 	height: 43px;
+	margin: 0 auto 16px;
 	font-size: 0;
 	text-align: center;
 	background-color: $shop-wrapper;
